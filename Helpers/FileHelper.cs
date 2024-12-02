@@ -8,9 +8,11 @@ public static class FileHelper
         var list1 = new List<int>();
         var list2 = new List<int>();
 
+        // retrieve numbers from each row, and split them into two lists
         foreach (var line in File.ReadLines(filePath))
         {
             var numbers = line.Split([' ', '\t'], StringSplitOptions.RemoveEmptyEntries);
+            
             if (numbers.Length == 2)
             {
                 list1.Add(int.Parse(numbers[0]));
@@ -22,12 +24,8 @@ public static class FileHelper
         {
             throw new Exception("Lists must be the same length");
         }
-        
-        if (list1 == null || list2 == null)
-        {
-            throw new Exception("Either lists cannot be null");
-        }
 
+        // sort lists (necessary for Day1A)
         list1 = list1.OrderBy(x => x).ToList();
         list2 = list2.OrderBy(x => x).ToList();
         
