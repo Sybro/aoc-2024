@@ -7,7 +7,7 @@ I'll be solving these challenges in C#, and sharing my progress here. Each day's
 
 | Day | Puzzle Name | Solution | Notes |
 |-----|-------------|----------|-------|
-| 01  | 🎁 [Day 1 Puzzle](https://adventofcode.com/2024/day/1)  | [Solution](./Solutions/Day01/Day01.cs)  | - |
+| 01  | 🎁 [Day 1 Puzzle](https://adventofcode.com/2024/day/1)  | [Solution](./Solutions/Day01/Day01.cs)  | ✅ |
 | 02  | 🎄 [Day 2 Puzzle](https://adventofcode.com/2024/day/2)  | [Solution](./Solutions/Day02/Day02.cs)  | - |
 | ... | ...         | ...      | ...   |
 
