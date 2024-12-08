@@ -16,9 +16,13 @@ Console.WriteLine($"Day 02a: {result2A}");
 var result2B = Day02.Part2();
 Console.WriteLine($"Day 02b: {result2B}");
 
-// Day 03a: 
+// Day 03a: Regex sum of two numbers
 var result3A = Day03.Part1();
 Console.WriteLine($"Day 03a: {result3A}");
+
+// Day 03b: Regex sum of two numbers with a condition (do/don't)
+var result3B = Day03.Part2();
+Console.WriteLine($"Day 03b: {result3B}");
 
 // Day 04a: 
 var result4A = Day04.Part1();

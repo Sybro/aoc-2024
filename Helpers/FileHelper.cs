@@ -1,4 +1,6 @@
-﻿namespace aoc_2024.Helpers;
+﻿using System.Text.RegularExpressions;
+
+namespace aoc_2024.Helpers;
 
 public static class FileHelper
 {
@@ -35,14 +37,11 @@ public static class FileHelper
     public static List<int[]> HelperDay02()
     {
         var lines = File.ReadAllLines("../../../Inputs/day02.txt");
-        var result = new List<int[]>();
 
-        foreach (var line in lines)
-        {
-            var numbers = line.Split(' ').Select(int.Parse).ToArray();
-            result.Add(numbers);
-        }
-
-        return result;
+        return lines.Select(line => line.Split(' ').Select(int.Parse).ToArray()).ToList();
     }
+    
+    public static string[] HelperDay03() 
+        => File.ReadAllLines("../../../Inputs/day03.txt");
+    
 }
