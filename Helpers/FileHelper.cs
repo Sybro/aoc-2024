@@ -2,9 +2,9 @@
 
 public static class FileHelper
 {
-    public static (List<int> list1, List<int> list2) LoadNumbers()
+    public static (List<int> list1, List<int> list2) HelperDay01()
     {
-        const string filePath = "../../../Inputs/day01_lists.txt";
+        const string filePath = "../../../Inputs/day01.txt";
         var list1 = new List<int>();
         var list2 = new List<int>();
 
@@ -30,5 +30,19 @@ public static class FileHelper
         list2 = list2.OrderBy(x => x).ToList();
         
         return (list1, list2);
+    }
+
+    public static List<int[]> HelperDay02()
+    {
+        var lines = File.ReadAllLines("../../../Inputs/day02.txt");
+        var result = new List<int[]>();
+
+        foreach (var line in lines)
+        {
+            var numbers = line.Split(' ').Select(int.Parse).ToArray();
+            result.Add(numbers);
+        }
+
+        return result;
     }
 }

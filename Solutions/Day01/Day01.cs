@@ -6,7 +6,7 @@ public static class Day01
 {
     public static int Part1()
     {
-        var (list1, list2) = FileHelper.LoadNumbers();
+        var (list1, list2) = FileHelper.HelperDay01();
         
         var distance = 0;
 
@@ -23,7 +23,7 @@ public static class Day01
     
     public static int Part2()
     {
-        var (list1, list2) = FileHelper.LoadNumbers();
+        var (list1, list2) = FileHelper.HelperDay01();
         
         var similarity = 0;
         
